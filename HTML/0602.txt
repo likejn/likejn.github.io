@@ -1,0 +1,198 @@
+过渡效果：通过一些简单的CSS动作触发平滑过渡功能
+一、简单的CSS动作：
+:link
+:visited
+:hover
+:active
+:foucs
+:checked
+
+二、平滑过渡效果
+1、transition-property：设置过渡或动态模拟的CSS属性
+（1）、可以设置的CSS属性表：
+样式名称			样式类型
+background-color		color(颜色)
+background-image		onlygradients(渐变)
+background-position	percentage,length(百分比，长度值)
+border-bottom-color	color
+border-bottom-width	length
+border-color		color
+border-left-color		color
+border-left-width		length
+border-right-color		color
+border-right-width		length
+border-spacing		length
+border-top-color		color
+border-top-width		length
+border-width		length
+bottom			length,percentage
+color			color
+crop			rectangle
+font-size			length,percentage
+font-weight		number
+grid-*			various
+height			length,percentage
+left			length,percentage
+letter-spacing		length
+line-height		number,length,percentage
+margin-bottom		length
+margin-left		length
+margin-right		length
+margin-top		length
+max-height		length,percentage
+max-width		length,percentage
+min-height		length,percentage
+min-width		length,percentage
+opacity			number
+outline-color		color
+outline-offset		integer
+outline-width		length
+padding-bottom		length
+padding-left		length
+padding-right		length
+padding-top		length
+right			length,percentage
+text-indent		length,percentage
+text-shadow		shadow
+top			length,percentage
+vertical-align		keywords,length,percentage
+visibility			visibility
+width			length,percentage
+word-spacing		length,percentage
+z-index			integer
+zoom			number
+（2）、相关的属性值：
+属性值		说明
+none		没有指定任何样式
+all		默认值，指定元素所支持transition-property属性的样式
+指定样式		指定支持transition-property的样式
+
+2、transition-duration：设置完成过渡所需的时间，单位秒s
+
+3、transition-timing-function：设置过渡的函数
+属性值		说明
+ease		默认值，元素样式从初始状态过渡到终止状态时速度由快到慢，逐渐变慢，等同于贝塞尔曲线(0.25,0.1,0.25,1.0)
+linear		元素样式从初始状态过渡到终止状态速度是恒速，等同于贝塞尔曲线(0.0,0.0,1.0,1.0)
+ease-in		元素样式从初始状态过渡到终止状态时，速度越来越快，呈一种加速状态，等同于贝塞尔曲线(0.42,0,1.0,1.0)
+ease-out		元素样式从初始状态过渡到终止状态时，速度越来越慢，呈一种减速状态，等同于贝塞尔曲线(0,0,0.58,1.0)
+ease-in-out	元素样式从初始状态过渡到终止状态时，先加速，再减速，等同于贝塞尔曲线(0.42,0,0.58,1.0)
+
+4、transition-delay：设置过渡开始出现的延迟时间
+
+三、例：
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	div{
+		width: 300px;
+		height: 200px;
+		background: red;
+		/*transition-property: margin-left,background;*/
+		transition-property: all;
+		transition-duration: 10s;
+		transition-timing-function: ease-in;
+		transition-delay: 3s;
+	}
+	div:hover{
+		margin-left: 200px;
+		background: green;
+	}
+</style>
+</head>
+<body>
+	<div>今天是个好日子</div>
+</body>
+---------------------------------------------------------------------------------
+动画效果：模拟Flash关键帧模式控制运行。
+一、设置动画
+@keyframes name {
+/*代码*/  
+}
+代码有两种写法：0%，50%，100%  |   from,to
+
+二、调用动画
+1、animation-name：设置调用动画的名称
+
+2、animation-duration：设置动画播放所需的时间
+
+3、animation-timing-function：设置动画的播放方式
+属性值		说明
+ease		由快到慢，逐渐变慢
+linear		恒速
+ease-in		速度越来越快，呈一种加速状态
+ease-out		速度越来越慢，呈一种减速状态
+ease-in-out	先加速，再减速
+
+4、animation-delay	：设置动画的延迟时间
+
+5、animation-iteration-count	：设置动画播放的循环次数
+属性值	说明
+次数	默认值为1
+infinite	表示无限次循环
+
+6、animation-direction：设置动画的播放方向
+属性值	说明
+normal	默认值，每次播放向前
+alternate	一次向前，一次向后，一次向前，一次向后，方向交替运行
+
+7、animation-play-state：控制动画的播放状态
+//设置停止播放动画
+animation-play-state: paused;
+
+8、animation-fill-mode：设置动画的时间外属性
+属性值		说明
+none		默认值，表示按预期进行和结束
+forwards		动画结束后继续应用最后关键帧位置，即不返回
+backforwards	动画结束后迅速应用起始关键帧位置，即返回
+both		根据情况产生forwards或backforwards的效果
+
+9、例：
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	@keyframes wy{
+		0%{
+			color: red;
+			font-size: 20px;
+		}
+		50%{
+			color: green;
+			font-size: 50px;
+		}
+		100%{
+			color: red;
+			font-size: 20px;
+		}
+	}
+	div{
+		animation-name: wy;
+		animation-duration: 10s;
+		animation-timing-function: ease-in;
+		animation-delay: 3s;
+	}
+</style>
+</head>
+<body>
+	<div>今天是个好日子</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

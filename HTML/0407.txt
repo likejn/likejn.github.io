@@ -1,0 +1,61 @@
+文档元素：
+一、标签header：表示首部，包括：LOGO、标题、导航等内容
+
+二、标签footer：表示尾部，一般包括：版权声明、友情链接等内容
+
+三、标签section：文档主题，标题
+
+四、标签nav：添加导航、菜单
+
+五、标签article：独立成篇的文档
+
+六、标签aside：生成注释栏，侧边栏
+
+七、标签address：表示文档或article元素的联系信息
+------------------------------------
+嵌入元素：把外部的一些资源插入到HTML中，javascript脚本
+一、标签img：嵌入图像
+src	嵌入图像的URL
+alt	当图片不加载时显示的备用内容
+width	定义图片的长度（单位是像素）
+height	定义图片的高度（单位是像素）
+
+二、标签map：创建分区响应图：热区
+
+三、标签progress：显示进度
+例：
+<progress value="30" max="100"></progress>
+
+四、标签meter：显示范围里的值
+例：
+<meter value="90" min="10" max="100" low="40" high="80"optimum="60"></meter>
+min和max表示范围边界，low表示小于它的值过低，high表示大于它的值过高，optimum表示最佳值，但不出现效果
+-------------------------------------
+音频和视频
+一、标签video：视频
+src	视频资源的URL
+width	视频宽度
+height	视频高度
+autoplay	设置后，表示立刻开始播放视频
+preload	设置后，表示预先载入视频
+controls	设置后，表示显示播放控件
+loop	设置后，表示反复播放视频
+muted	设置后，表示视频处于静音状态
+poster	指定视频数据载入时显示的图片，预览图
+
+二、标签audio：音频
+src	视频资源的URL
+autoplay	设置后，表示立刻开始播放音频
+preload	设置后，表示预先载入音频
+controls	设置后，表示显示播放音件
+
+
+
+
+
+
+
+
+
+
+

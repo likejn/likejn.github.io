@@ -1,0 +1,18 @@
+表单元素：
+一、下拉框列表select，包含两个子元素:<option>项目元素和<optgroup>分组元素，属性有：
+name		设定提交时的名称
+disabled		将下拉列表禁用
+size		设置下拉列表的高度，显示不同的样式
+multiple		设置是否可以多选
+autofocus	获取焦点
+value		提交服务器的值
+
+二、多行文本框textarea，属性有：
+name		设定提交时的名称
+readonly		设置多行文本框只读
+disabled		将多行文本框禁用
+maxlength	设置最大可输入的字符长度
+autofocus	获取焦点
+rows		设置行数
+cols		设置列数
+wrap		设置是否插入换行符，有soft和hard两种

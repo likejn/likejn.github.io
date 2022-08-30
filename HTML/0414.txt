@@ -1,0 +1,79 @@
+表单元素：input的type属性
+一、type为text，默认，文本框，其他属性有：
+maxlength	设置文本框最大能输入的字符长度
+placeholder	输入字符的提示
+readonly		文本框处于只读状态
+disabled		文本框处于禁用状态
+size		设置文本框长度，无单位
+value		设置文本框初始值
+
+二、type为password，密码框，其他属性有：
+maxlength	设置文本框最大能输入的字符长度
+placeholder	输入字符的提示
+readonly		文本框处于只读状态
+disabled		文本框处于禁用状态
+size		设置文本框长度，无单位
+value		设置文本框初始值            
+
+三、type为search，搜索框，其他属性有：
+maxlength	设置文本框最大能输入的字符长度
+placeholder	输入字符的提示
+readonly		文本框处于只读状态
+disabled		文本框处于禁用状态
+size		设置文本框长度，无单位
+value		设置文本框初始值
+
+四、type为number、range，数字框，其他属性有：
+min	设置可接受的最小值
+max	设定可接受的最大值
+readonly	设置文本框内容只读
+step	指定上下调节值的步长
+value	指定初始值
+
+五、type为date系列：
+<input type="date">
+<input type="month">
+<input type="time">
+<input type="week">
+<input type="datetime">
+<input type="datetime-local">
+
+六、type为color，颜色框
+
+七、type为checkbox（选择框）、radio（单选框），其他属性有：
+checked	设置选择框、单选框是否为勾选状态
+value	设置选择框、单选框勾选状态时提交的数据，默认为on
+name	设置选择框、单选框的名称
+单选框：
+1、在同一页面中，checked属性只能有一个是on，其他的必须是off，默认为off
+2、所有单选框的名称，也就是name属性，必须相同
+3、提交服务器时，提交的内容是value属性的属性值
+选择框：
+1、在同一页面中，checked属性无所谓
+2、所有选择框的名称，也就是name属性，必须不相同
+3、提交服务器时，提交的内容是value属性的属性值
+
+八、type为submit、reset和button，按钮，和button区别在于不用写字
+
+九、type为image，图片按钮，其他属性有：
+src	指定要显示图像的URL
+width	图像的长度
+height	图像的高度
+
+十、type为email、tel、url：email为电子邮件格式、tel为电话格式、url为网址格式
+
+十一、type为hidden，隐藏控件
+
+十二、type为file，上传，其他属性：
+accept	指定接受的MIME类型
+例：
+accept="image/gif,image/jpeg,image/png"
+audio/*	接受所有的声音文件。
+video/*	接受所有的视频文件。
+image/*	接受所有的图像文件。
+
+
+
+
+
+

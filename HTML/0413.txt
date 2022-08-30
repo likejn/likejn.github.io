@@ -1,0 +1,31 @@
+表单元素
+一、标签form：定义表单
+action	表示表单提交的页面
+method	表示表单的请求方式：有POST和GET两种，默认GET
+name	设置表单名称，以便程序调用
+target	设置提交时的目标位置：_blank、_self
+autocomplete	设置浏览器记住用户输入的数据，实现自动完成表单，默认为on自动完成，                                如果不想自动完成则设置off
+
+二、标签input：表示用户输入数据，默认type属性值为text，文本框 
+autofocus	让光标聚焦在某个input元素上，让用户直接输入
+disabled		禁用input元素
+autocomplete	单独设置input元素的自动完成功能
+type		input元素的类型，内容较多
+name		定义input元素的名称，以便接收到相应的值
+value		设置文本框初始值
+
+三、标签label：添加说明标签，设置文字
+
+四、标签fieldset：对表单进行编组
+
+五、标签legend：添加分组说明标签
+
+六、标签button：添加按钮
+属性type：
+submit	表示按钮的作用是提交表单，默认
+reset	表示按钮的作用是重置表单
+button	表示按钮为一般性按钮，没有任何作用
+在表单中，可以用标签button制作按钮
+但是一般我们做按钮的时候，不用标签button来完成
+
+

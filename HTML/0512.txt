@@ -1,0 +1,111 @@
+文本样式
+一、文字
+1、font-size：设置字体的大小
+值	说明
+xx-small	设置字体大小，每个值从小到大的固定值
+x-small	设置字体大小，每个值从小到大的固定值
+small	设置字体大小，每个值从小到大的固定值
+medium	设置字体大小，每个值从小到大的固定值
+large	设置字体大小，每个值从小到大的固定值
+x-large	设置字体大小，每个值从小到大的固定值
+xx-large	设置字体大小，每个值从小到大的固定值
+smaller	设置字体相对于父元素字体的大小
+larger	设置字体相对于父元素字体的大小
+数字+px	使用CSS像素长度设置字体大小
+数字+%	使用相对于父元素字体的百分比大小
+
+2、font-variant：设置英文字体是否转换为小型大写
+值		说明
+normal		表示如果以小型大写状态，让它恢复小写状态
+small-caps	让小写字母以小型大写字母显示
+
+3、font-style：设置字体是否倾斜
+值	说明
+normal	表示让倾斜状态恢复到正常状态
+italic	表示使用斜体
+oblique	表示让文字倾斜，区别在没有斜体时使用
+
+4、font-weight：设置字体是否加粗
+值			说明
+normal			表示让加粗的字体恢复正常
+bold			粗体
+bolder			更粗的字体
+lighter			轻细的字体
+100~900之间的数字		600及之后是加粗，之前不加粗
+
+5、font-family：设置font字体，可以同时设置多个后备
+
+6、font：设置字体样式复合写法：[是否倾斜|是否加粗|是否转小型大写]字体大小、字体名称
+
+7、@font-face：设置Web字体
+@font-face {
+font-family: abc;
+src: url('字体的相对地址');
+}
+p {
+font-size: 50px;
+font-family: abc;
+}
+
+二、文本
+1、text-decoration：装饰文本出现各种划线
+值		说明
+none		让本身有划线装饰的文本取消掉，主要用于超链接
+underline		让文本的底部出现一条下划线
+overline		让文本的头部出现一条上划线
+line-through	让文本的中部出现一条删除划线
+
+2、text-transform：将英文文本转换大小写
+值		说明
+none		将已被转换大小写的值恢复到默认状态
+capitalize		将英文单词首字母大写
+uppercase	将英文转换为大写字母
+lowercase	将英文转换为小写字母
+
+3、text-shadow：给文本添加阴影：水平偏移  垂直偏移  阴影模糊度（可选）  阴影颜色（可选）
+
+4、text-align：设置文本对齐方式
+值	说明
+left	靠左对齐，默认
+right	靠右对齐
+center	居中对齐justify
+justify	内容两端对齐
+start	让文本处于开始的边界
+end	让文本处于结束的边界
+
+5、white-space：排版中的空白处理方式
+值	说明
+normal	默认值，空白符被压缩，文本自动换行
+nowrap	空白符被压缩，文本不换行
+pre	空白符被保留，遇到换行符则换行
+pre-line	空白符被压缩，文本会在排满或遇换行符换行
+pre-wrap	空白符被保留，文本会在排满或遇换行符换行
+
+6、letter-spacing：设置字母之间的间距
+值	说明
+normal	设置默认间距
+长度值	比如：“数字”+“px”
+
+7、word-spacing：设置单词之间的间距
+值	说明
+normal	设置默认间距
+长度值	比如：“数字”+“px”
+
+8、line-height：设置行高，可以设置文字在垂直方向上的位置，尤其是垂直居中
+值	说明
+normal	设置默认间距
+长度值	比如：“数字”+“px”
+数值	比如：1,2,3
+%	比如：200%
+
+9、word-wrap：控制断词：让过长的英文单词断开
+值		说明
+normal		单词不断开
+break-word	断开单词
+
+10、text-indent：设置文本首行的缩进
+值	说明
+normal	设置默认间距
+长度值	比如：“数字”+“px”
+
+

@@ -1,0 +1,104 @@
+一、表格
+1、相邻单元格边框的间距：border-spacing
+2、表格内容过多时是否拉伸表格：table-layout
+值	说明
+auto	默认值，内容过长时，拉伸整个单元格
+fixed	内容过长时，不拉伸整个单元格
+
+二、列表
+1、列表的前缀：list-style-type：属性值取none时没有前缀，可以做菜单
+值		说明
+none		没有标记
+disc		实心圆
+circle		空心圆
+square		实心方块
+decimal		阿拉伯数字
+lower-roman	小写罗马数字
+upper-roman	大写罗马数字
+lower-alpha	小写英文字母
+upper-roman	大写英文字母
+
+三、颜色：color
+
+四、透明度：opacity：取值0~1
+
+五、盒子阴影：box-shadow：一共六个值，前两个必写，后四个可写
+值	说明
+hoffset	阴影的水平偏移量，是一个长度值，正值表示阴影向右偏移，负值表示阴影向左偏移
+voffset	阴影的垂直偏移量，是一个长度值，正值代表阴影位于元素盒子的下方，负值代表阴影位于元素盒子上方
+blur	（可选）指定模糊值，是一个长度值，值越大盒子的边界越模糊，默认值为0，边界清晰
+spread	（可选）指定阴影延伸半径，是一个长度值，正值代表阴影向盒子各个方向延伸扩大，负值代表阴影沿相反方向缩小
+color	（可选）设置阴影的颜色，如果省略，浏览器会自行选择一个颜色
+inset	（可选）将外部阴影设置为内部阴影
+
+六、盒子轮廓：轮廓样式和边框一样，只不过它可以在边框的外围再加一层
+属性		值	说明
+outline-style	样式	轮廓样式，和border-style一致
+outline-color	颜色	外围轮廓的颜色
+outline-witdh	长度	轮廓宽度
+outline-offset	长度	轮廓距离元素边框边缘的偏移量
+
+七、光标样式：cursor
+属性值可以设置为：auto,default,none,context-menu,help,pointer,progress,wait,cell,crosshair,text,vertical-text,alias,copy,move,no-drop,not-allowed,e-resize,n-resize,ne-resize,nw-resize,s-resize,se-resize,sw-resize,w-resize,ew-resize,ns-resize,nesw-resize,nwse-resize,col-resize,row-resize,all-scroll
+----------------------------------------------------------
+css3
+一、文本阴影：text-shadow：水平偏移量 垂直偏移量 模糊值 颜色
+
+二、文本裁剪：text-overflow
+属性值	说明
+clip	默认值，裁剪文本时不添加“...”省略号
+ellipsis	裁剪文本时添加“...”省略号
+文本裁剪后添加省略号的写法：
+overflow: hidden;		#文本裁剪
+text-overflow: ellipsis;	#添加省略号
+white-space:nowrap;	#文本不换行
+
+三、文本描边：
+text-stroke：简写形式
+text-stroke-width：描边的粗细
+text-stroke-color：描边的颜色
+
+四、文本填充：text-fill-color：通常和文本描边配合使用
+
+五、线性渐变：linear-gradient
+1、linear-gradient(方位,起始色,末尾色)
+2、方位是可选参数，可以使用的值有：to top、to top right、to right、to bottom、to bottom left、to left、to top left
+3、语法：background-image: linear-gradient(方位,起始色,末尾色);
+
+六、径向渐变：radial-gradient
+1、radial-gradient(方位,起始色,末尾色)
+2、方位设置为形状的属性有：
+形状	说明
+circle	圆形
+ellipse	椭圆形，默认值
+（1）可以添加形状的半径：
+半径关键字	说明
+closest-side	指定径向渐变的半径长度为从圆心到离圆心最近的边
+closest-corner	指定径向渐变的半径长度为从圆心到离圆心最近的角
+farthest-side	指定径向渐变的半径长度为从圆心到离圆心最远的边
+farthest-corner	指定径向渐变的半径长度为从圆心到离圆心最远的角
+（2）可以对形状进行方向设置：
+方向		说明
+at top		从顶部发散
+at left		从左侧发散
+at right		从右侧发散
+at bottom	从底部发散
+at center		从中间发散
+3、语法：语法：background-image: radial-gradient(方位,起始色,末尾色);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
